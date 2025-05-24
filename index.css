@@ -39,13 +39,19 @@ body {
     width: 500px;
     height: 500px;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
     background: #fff;
     border: 3px solid #000;
     box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
 }
 
-#grid .cell {
+#grid .row {
+    flex: 1 1 auto;
+    display: flex;
+}
+
+#grid .column {
+    flex: 1 1 auto;
     box-sizing: border-box;
     border: 0.5px solid #eee;
 }
